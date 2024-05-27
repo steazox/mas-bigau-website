@@ -10,22 +10,38 @@ body {
 
 }
 
+
+
+@font-face {
+    font-family: 'Eurostile Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Eurostile Regular'), url('font/eurostile.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'EuroStyle Normal';
+    font-style: normal;
+    font-weight: normal;
+    src: local('EuroStyle Normal'), url('font/EuroStyle Normal.woff') format('woff');
+    }
+
 html {
     
 }
 
-h1 {
+h1.disco {
     color: var(--color);
     font-family: "Lora", serif;
     margin: 30px;
-    font-size: 5rem;
+    font-size: 3rem;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Lora", serif;
     scroll-behavior: smooth;
 }
 
@@ -40,7 +56,7 @@ h1 {
     align-items: center;
     bottom: 0px;
     margin: 30px;
-    margin-top: 40vh;
+    margin-top: 120%;
 }
 
 .text {
@@ -72,7 +88,6 @@ h1 {
 }
 
 .screen1, .screen2 {
-    width: 100vw;
     height: 100vh;
 }
 
@@ -90,4 +105,36 @@ h1 {
     width: 30%;
     margin: auto;
     margin-left: 55px;
+}
+
+.list {
+    display: block;
+    color: var(--back);
+    font-family: 'Eurostile Regular';
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px var(--color);
+    font-size: 50px;
+    text-align: right;
+    margin: 15px;
+    position: relative;
+    top: 30%;
+
+    color: var(--back);
+}
+
+a {
+    text-decoration: none;
+    color: var(--back);
+}
+
+.list-content {
+    margin-top: 20px;
+}
+
+h1.what {
+    color: var(--color);
+    font-family: "Lora", serif;
+    margin: 30px;
+    font-size: 3rem;
+    margin-top: 100px;
 }
